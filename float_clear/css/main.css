@@ -1,0 +1,41 @@
+@charset "utf-8";
+.dog{
+    display: inline-block;
+    margin: 0 auto;
+    background-color: pink;
+}
+img{
+    float: left;
+    margin: 12px;
+}
+.box1{
+    background-color: plum;
+    float: left;
+    /* float 속성은 요소를 왼쪽이나 오른쪽으로 띄워서 
+    텍스트나 다른 요소들이 주위를 감싸도록 합니다. */
+    /* 띄워진 요소는 일반적인 흐름에서 빠져서 다른 요소들과 겹칠 수 있습니다. */
+    /* 띄워진 요소의 부모 요소는 해당 요소의 높이를 고려하지 않게 되므로, 
+    부모 요소에 적절한 방법으로 clearfix를 적용하여 높이를 제대로 유지해야 합니다. */
+}
+.box2{
+    background-color: pink;
+    clear: both;
+    /* clear 속성은 띄워진(float) 요소의 영향을 해제하고, 
+    주변 요소들이 해당 요소 주위를 감싸지 않도록 합니다. */
+    /* clear는 띄워진 요소 이후에 새로운 블록 서식 요소를 시작하도록 강제합니다. */
+    /* 주로 띄워진 요소 다음에 새로운 블록 서식 요소가 와야 할 경우 사용됩니다. */
+}
+.box3{
+    background-color: lightpink;
+    float: left;
+}
+.box4{
+    background-color: lightcoral;
+    float: right;
+}
+.box5{
+    background-color: rgb(223, 54, 54);
+    clear: left;
+    /* clear: left
+    띄워진(float) 요소들 중에서 왼쪽으로 띄워진 요소의 영향을 해제하는 역할 */
+}
